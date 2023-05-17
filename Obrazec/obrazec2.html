@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:url('dom.png');
+  background-size:cover;
+  background-position:center;
+  padding: 0;
+  margin: 0;
+}
+
+.window{
+
+  width:900px;
+  height:1800px;
+  padding:40px;
+  text-align:center;
+  border:1px solid white;
+  border-radius:20px;
+  backdrop-filter: blur(50px) brightness(80%);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  vertical-align: top;
+ 
+}
+h1 {
+	color: white;
+}
+
+h2 {
+	color: white;
+	display: flex;
+}
+
+.input {
+  width:150px;
+  height:20px;
+}
+
+table {
+	background-color:white;
+}
+.leva {
+	text-align: left;
+}
+
+.2 {
+  width: 10px;
+  height: 20px;
+
+}
+hr {
+	width: 100%;
+	height: 10px;
+	background: white;
+	border: none;
+	margin-top: 20px;
+}
+
+button{
+	font-size: 16px;
+	font-weight: 800;
+	width:100 px;
+	height: 50px;
+	margin-top: 25px;
+}
+#podpis-div {
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+}
+
+</style>
+
+<head>
+	<title>lasten obrazec</title>
+</head>
+
+<body>
+	<form action="nov 2.html" method="post">	
+	<div class="window">
+	
+	<h1 style="color: white">Prijava za v dijaški dom</h1>
+	<hr>
+
+	<h2 style="color: white">Dijaški dom</h2>
+	<input class="input" type="text" placeholder="Ime doma" name="" required>
+
+	<h2 style="color: white">Šolsko leto</h2>
+
+	<div class="leva">
+		<input class="input" type="text" placeholder="DD" name="" required> //
+		<input class="input" type="text" placeholder="MM" name="" required>//
+		<input class="input" type="text" placeholder="YYYY" name="" required>
+	</div>
+
+	<hr>
+	</table>
+	<h2>Osebno ime kandidata</h2>
+	<input class="input" type="text" placeholder="Ime" name="" required>
+	<h2>Rojstni podatki (dan,mesec,leto;kraj,občina in država rojstva)</h2>
+	<input class="2" type="text" placeholder="" name="" required>
+	<h2 >Spol</h2>
+	<div class="leva">
+		<input type="radio" id="M" name="a">
+		<label for="M">M</label>
+		<input type="radio" id="Ž" name="a">
+		<label for="Ž">Ž</label>
+	</div>
+	<h2>Emšo in Državljanstvo</h2>
+	<div class="leva">
+	<input  class="input" type="text" placeholder="" name="" required>
+	<input  class="input" type="text" placeholder="" name="" required>
+	</div>
+	
+	<h2>Ulica (naselje) in hišna številka prebivališča</h2>
+	<div class="leva">
+		<input  class ="input" type="text" placeholder="stalno prebivališče" name="" required
+		<input type="text" placeholder="" name="" required>
+		<input class ="input"  type="text" placeholder="poštna št in kraj" name="" required>
+		<input class ="input"  type="text" placeholder="občina" name="" required>
+		<input class ="input" type="text" placeholder="država" name="" required>
+		<hr>
+	<h1 style="color: white">Podatki o starših oz.zakonskih sorodnikih</h1>
+	<h2>Ime zastopnika</h2>
+	<div class="leva">
+		<input  class="input" type="text" placeholder="ime" name="" required>
+		<input  class="input" type="text" placeholder="Davčna št" name="" required>
+	
+	</div>
+	<h2>Naslov pribivališča</h2>
+		<input  class="input" type="text" placeholder="ulica" name="" required>
+	<h2>Telefonska številka</h2>
+		<input  class="input" type="text" placeholder="" name="" required>
+	<hr>
+	</div>
+
+	<h2>Podpis starša in dijaka</h2>
+		<div class="leva" id="podpis-div">
+			<script src='signature-pad.min.js' style="width: 40mm; height: 20mm;"></script>
+			<script src='signature-pad.min.js' style="width: 40mm; height: 20mm;" ></script>
+		</div>
+		
+	<h2 style="color: white">Datum izpolnjenega obrazca</h2>
+
+	<div class="leva">
+		<input class="input" type="text" placeholder="DD" name="" required> //
+		<input class="input" type="text" placeholder="MM" name="" required>//
+		<input class="input" type="text" placeholder="YYYY" name="" required>
+	</div>
+	
+	<button>Oddaj obrazec</button>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
